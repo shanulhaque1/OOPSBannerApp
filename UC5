@@ -1,0 +1,36 @@
+/**
+ * OOPSBannerApp
+ *
+ * UC5: Combine array declaration and initialization
+ * with String.join() to render the OOPS banner.
+ *
+ * Demonstrates concise array initialization,
+ * String.join(), and enhanced for-loop usage.
+ *
+ * @author YourName
+ * @version 1.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        System.out.println("UC5 Output:");
+
+        // Array declaration + initialization in one step
+        String[] banner = {
+            String.join("", " ***** ", "   ", " ***** ", "   ", " ****** ", "   ", " ***** "),
+            String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*     *"),
+            String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*      "),
+            String.join("", "*     *", "  ", "*     *", "   ", "****** ", "   ", " ***** "),
+            String.join("", "*     *", "  ", "*     *", "   ", "*      ", "      ", "*"),
+            String.join("", "*     *", "  ", "*     *", "   ", "*      ", "   ", "*     *"),
+            String.join("", " ***** ", "   ", " ***** ", "   ", "*      ", "   ", " ***** ")
+        };
+
+        // Enhanced for loop to print banner
+        for (String line : banner) {
+            System.out.println(line);
+        }
+    }
+}
