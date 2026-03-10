@@ -1,0 +1,19 @@
+
+        // ======================
+        // UC4
+        // ======================
+        System.out.println("UC4 Output:");
+
+        String[] banner = {
+            String.join("", " ** ", "   ", " ** ", "   ", " ** ", "   ", " *** "),
+            String.join("", "*     ", "  ", "     ", "   ", "     ", "  ", "     *"),
+            String.join("", "*     ", "  ", "     ", "   ", "     ", "  ", "      "),
+            String.join("", "*     ", "  ", "     ", "   ", "** ", "   ", " ** "),
+            String.join("", "*     ", "  ", "     ", "   ", "      ", "      ", "*"),
+            String.join("", "*     ", "  ", "     ", "   ", "      ", "   ", "*     *"),
+            String.join("", " ** ", "   ", " ** ", "   ", "*      ", "   ", " *** ")
+        };
+
+        // Enhanced for-loop
+        for (String line : banner) {
+            System.out.println(line);
